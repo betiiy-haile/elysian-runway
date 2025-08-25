@@ -34,9 +34,9 @@ It showcases an elegant runway event with sections for event details, schedule, 
 elysian-runway/
  ┣ 📂 src/
  ┃ ┣ 📂 components/    # Reusable UI components
- ┃ ┣ 📂 pages/         # Page sections (Home, Schedule, Designers, Contact)
  ┃ ┣ 📂 assets/        # Images, fonts, and static files
- ┃ ┗ App.jsx           # Main app entry
+ ┃ ┣ App.jsx           # Main app entry
+ ┃ ┗ types.jsx         # Typescript type definations
  ┣ 📂 public/          # Public assets
  ┣ package.json        # Dependencies & scripts
  ┣ tailwind.config.js  # Tailwind configuration
