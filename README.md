@@ -1,69 +1,98 @@
-# React + TypeScript + Vite
+# Elysian Runway
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Elysian Runway is a modern, responsive fashion event website built with **React.js** and **Tailwind CSS**.  
+It showcases an elegant runway event with sections for event details, schedule, designers, and registration.
 
-Currently, two official plugins are available:
+🚀 Deployed on [Vercel](https://vercel.com/)  
+📂 Source Code: [GitHub Repository](https://github.com/betiiy-haile/elysian-runway)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🎨 **Modern UI/UX** using React + Tailwind CSS
+- 📱 **Fully Responsive** (Desktop, Tablet, Mobile)
+- ⚡ **Performance Optimized** (lazy loading images, modular components)
+- 🎭 **Smooth Animations & Transitions** (optional enhancements)
+- 🔍 **SEO-friendly structure**
+- ☁️ **Deployed on Vercel** for fast hosting
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Framework:** React.js
+- **Styling:** Tailwind CSS
+- **Editor (recommended):** VS Code
+- **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
+
+```bash
+elysian-runway/
+ ┣ 📂 src/
+ ┃ ┣ 📂 components/    # Reusable UI components
+ ┃ ┣ 📂 pages/         # Page sections (Home, Schedule, Designers, Contact)
+ ┃ ┣ 📂 assets/        # Images, fonts, and static files
+ ┃ ┗ App.jsx           # Main app entry
+ ┣ 📂 public/          # Public assets
+ ┣ package.json        # Dependencies & scripts
+ ┣ tailwind.config.js  # Tailwind configuration
+ ┗ README.md           # Project documentation
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Installation Guide – Elysian Runway
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Follow these steps to set up and run the **Elysian Runway** project locally on your machine.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 1. Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- A code editor (e.g., [VS Code](https://code.visualstudio.com/))
+
+---
+
+## 2. Clone the Repository
+
+```bash
+git clone https://github.com/betiiy-haile/elysian-runway.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd elysian-runway
+```
+
+## 3. Install Dependencies
+
+```bash
+npm install
+```
+
+or with yarn
+
+```bash
+yarn  install
+```
+
+## 4. Run the Development Server
+
+Start the local development server:
+
+```bash
+npm run dev
+```
+
+or with yarn
+
+```bash
+yarn dev
 ```
